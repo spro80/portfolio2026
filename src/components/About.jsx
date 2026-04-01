@@ -1,0 +1,92 @@
+import useFadeIn from './useFadeIn';
+
+const skills = [
+  'React','Vue.js','Angular','Bootstrap',
+  'Node.js','Python','Java','REST / GraphQL',
+  'AWS','Docker','Kubernetes','Terraform',
+  'PostgreSQL','MongoDB','Redis','CI/CD',
+];
+
+const timeline = [
+  { year: '2022 — Presente', role: 'Senior Software Engineer',       company: 'Freelance · Remoto — Chile y Latam' },
+  { year: '2020 — 2022',     role: 'Full Stack Developer',            company: 'Startup FinTech · Santiago, Chile'   },
+  { year: '2018 — 2020',     role: 'Backend Developer',               company: 'Consultora Tecnológica · Chile'       },
+  { year: '2014 — 2018',     role: 'Ingeniería en Informática',       company: 'Universidad · Chile'                  },
+];
+
+const cardStyle = {
+  background: 'var(--card-bg)',
+  border: '1px solid var(--card-border)',
+  borderRadius: 8, padding: '2.5rem',
+};
+
+export default function About() {
+  const leftRef  = useFadeIn();
+  const rightRef = useFadeIn();
+
+  return (
+    <section id="about" style={{ padding: '6rem 0' }}>
+      <div className="container">
+        <div className="row align-items-center g-5">
+
+          {/* Left — bio & skills */}
+          <div className="col-lg-5 fade-in" ref={leftRef}>
+            <p className="section-tag">sobre mí</p>
+            <h2 className="section-title">Construyo software que escala</h2>
+            <p className="section-sub mb-4">
+              Soy David, ingeniero de software con experiencia en el ciclo completo
+              de desarrollo: desde arquitectura y backend hasta frontend e
+              infraestructura cloud.
+            </p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+              Me apasiona resolver problemas técnicos complejos con soluciones
+              elegantes. Trabajo con startups y empresas para construir sistemas
+              confiables y mantenibles que crecen junto al negocio.
+            </p>
+            <div>
+              {skills.map(s => (
+                <span key={s} className="tech-pill">{s}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* Right — timeline */}
+          <div className="col-lg-7 fade-in" ref={rightRef}>
+            <div style={cardStyle}>
+              <p className="section-tag mb-3">experiencia</p>
+              {timeline.map((item, i) => (
+                <div key={i} style={{
+                  position: 'relative',
+                  paddingLeft: '1.5rem',
+                  marginBottom: i < timeline.length - 1 ? '1.5rem' : 0,
+                }}>
+                  {/* dot */}
+                  <span style={{
+                    position: 'absolute', left: 0, top: 8,
+                    width: 8, height: 8, borderRadius: '50%',
+                    background: 'var(--accent)', display: 'block',
+                  }} />
+                  {/* line */}
+                  {i < timeline.length - 1 && (
+                    <span style={{
+                      position: 'absolute', left: 3, top: 18,
+                      width: 1, height: 'calc(100% + 8px)',
+                      background: 'var(--card-border)', display: 'block',
+                    }} />
+                  )}
+                  <div style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: '0.72rem', color: 'var(--accent)',
+                  }}>{item.year}</div>
+                  <div style={{ fontWeight: 600, fontSize: '1rem', color: '#fff' }}>{item.role}</div>
+                  <div style={{ color: 'var(--muted)', fontSize: '0.88rem' }}>{item.company}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
