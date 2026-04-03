@@ -1,0 +1,258 @@
+<svg viewBox="0 0 300 370" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <radialGradient id="nn-bg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#060d10"/>
+      <stop offset="100%" stop-color="#020508"/>
+    </radialGradient>
+    <radialGradient id="nn-face-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00c9ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00c9ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nn-head-glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="nn-glow-sm">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nn-glow-md">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nn-glow-lg">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="370" fill="url(#nn-bg)"/>
+
+  <!-- Head/face area glow -->
+  <ellipse cx="150" cy="168" rx="90" ry="95" fill="url(#nn-head-glow)"/>
+  <ellipse cx="150" cy="168" rx="60" ry="65" fill="url(#nn-face-glow)"/>
+
+  <!-- ══════════════════════════════════
+       NEURAL CONNECTIONS (edges)
+       ══════════════════════════════════ -->
+
+  <!-- Outer network connections - faint -->
+  <g stroke="#00c9ff" stroke-width="0.4" opacity="0.15">
+    <!-- scattered outer -->
+    <line x1="20" y1="30" x2="55" y2="70"/>
+    <line x1="55" y1="70" x2="40" y2="115"/>
+    <line x1="20" y1="30" x2="70" y2="40"/>
+    <line x1="70" y1="40" x2="95" y2="70"/>
+    <line x1="280" y1="30" x2="245" y2="70"/>
+    <line x1="245" y1="70" x2="260" y2="115"/>
+    <line x1="280" y1="30" x2="230" y2="40"/>
+    <line x1="230" y1="40" x2="205" y2="70"/>
+    <line x1="40" y1="115" x2="25" y2="160"/>
+    <line x1="260" y1="115" x2="275" y2="160"/>
+    <line x1="25" y1="160" x2="18" y2="205"/>
+    <line x1="275" y1="160" x2="282" y2="205"/>
+    <line x1="18" y1="205" x2="30" y2="250"/>
+    <line x1="282" y1="205" x2="270" y2="250"/>
+    <line x1="30" y1="250" x2="55" y2="295"/>
+    <line x1="270" y1="250" x2="245" y2="295"/>
+    <line x1="55" y1="295" x2="85" y2="340"/>
+    <line x1="245" y1="295" x2="215" y2="340"/>
+    <line x1="85" y1="340" x2="150" y2="355"/>
+    <line x1="215" y1="340" x2="150" y2="355"/>
+    <line x1="55" y1="70" x2="95" y2="70"/>
+    <line x1="245" y1="70" x2="205" y2="70"/>
+  </g>
+
+  <!-- Mid-layer connections -->
+  <g stroke="#00ff88" stroke-width="0.5" opacity="0.2">
+    <line x1="95" y1="70" x2="115" y2="105"/>
+    <line x1="205" y1="70" x2="185" y2="105"/>
+    <line x1="115" y1="105" x2="100" y2="140"/>
+    <line x1="185" y1="105" x2="200" y2="140"/>
+    <line x1="100" y1="140" x2="90" y2="175"/>
+    <line x1="200" y1="140" x2="210" y2="175"/>
+    <line x1="90" y1="175" x2="95" y2="210"/>
+    <line x1="210" y1="175" x2="205" y2="210"/>
+    <line x1="95" y1="210" x2="105" y2="245"/>
+    <line x1="205" y1="210" x2="195" y2="245"/>
+    <line x1="105" y1="245" x2="120" y2="280"/>
+    <line x1="195" y1="245" x2="180" y2="280"/>
+    <!-- cross connections -->
+    <line x1="115" y1="105" x2="150" y2="95"/>
+    <line x1="185" y1="105" x2="150" y2="95"/>
+    <line x1="100" y1="140" x2="130" y2="132"/>
+    <line x1="200" y1="140" x2="170" y2="132"/>
+    <line x1="90" y1="175" x2="120" y2="168"/>
+    <line x1="210" y1="175" x2="180" y2="168"/>
+  </g>
+
+  <!-- Core face connections - brighter -->
+  <g stroke="#00ff88" stroke-width="0.7" opacity="0.45">
+    <!-- forehead network -->
+    <line x1="130" y1="115" x2="150" y2="105"/>
+    <line x1="150" y1="105" x2="170" y2="115"/>
+    <line x1="130" y1="115" x2="120" y2="132"/>
+    <line x1="170" y1="115" x2="180" y2="132"/>
+    <line x1="120" y1="132" x2="128" y2="148"/>
+    <line x1="180" y1="132" x2="172" y2="148"/>
+    <line x1="128" y1="148" x2="150" y2="142"/>
+    <line x1="172" y1="148" x2="150" y2="142"/>
+    <!-- eye network -->
+    <line x1="120" y1="163" x2="128" y2="148"/>
+    <line x1="180" y1="163" x2="172" y2="148"/>
+    <line x1="120" y1="163" x2="127" y2="175"/>
+    <line x1="180" y1="163" x2="173" y2="175"/>
+    <!-- mid face -->
+    <line x1="127" y1="175" x2="140" y2="185"/>
+    <line x1="173" y1="175" x2="160" y2="185"/>
+    <line x1="140" y1="185" x2="150" y2="192"/>
+    <line x1="160" y1="185" x2="150" y2="192"/>
+    <line x1="150" y1="192" x2="145" y2="208"/>
+    <line x1="150" y1="192" x2="155" y2="208"/>
+    <line x1="145" y1="208" x2="138" y2="215"/>
+    <line x1="155" y1="208" x2="162" y2="215"/>
+    <line x1="138" y1="215" x2="150" y2="222"/>
+    <line x1="162" y1="215" x2="150" y2="222"/>
+    <!-- jaw/chin -->
+    <line x1="150" y1="222" x2="148" y2="235"/>
+    <line x1="120" y1="163" x2="112" y2="175"/>
+    <line x1="180" y1="163" x2="188" y2="175"/>
+    <line x1="112" y1="175" x2="110" y2="195"/>
+    <line x1="188" y1="175" x2="190" y2="195"/>
+    <line x1="110" y1="195" x2="120" y2="210"/>
+    <line x1="190" y1="195" x2="180" y2="210"/>
+    <line x1="120" y1="210" x2="130" y2="220"/>
+    <line x1="180" y1="210" x2="170" y2="220"/>
+    <line x1="130" y1="220" x2="138" y2="215"/>
+    <line x1="170" y1="220" x2="162" y2="215"/>
+    <!-- body network -->
+    <line x1="120" y1="280" x2="110" y2="315"/>
+    <line x1="180" y1="280" x2="190" y2="315"/>
+    <line x1="110" y1="315" x2="115" y2="350"/>
+    <line x1="190" y1="315" x2="185" y2="350"/>
+    <line x1="115" y1="350" x2="150" y2="360"/>
+    <line x1="185" y1="350" x2="150" y2="360"/>
+    <line x1="120" y1="280" x2="150" y2="272"/>
+    <line x1="180" y1="280" x2="150" y2="272"/>
+    <line x1="148" y1="235" x2="140" y2="258"/>
+    <line x1="140" y1="258" x2="120" y2="280"/>
+    <line x1="148" y1="235" x2="160" y2="258"/>
+    <line x1="160" y1="258" x2="180" y2="280"/>
+  </g>
+
+  <!-- ══════════════════════════════════
+       NEURAL NODES (vertices)
+       ══════════════════════════════════ -->
+
+  <!-- Outer scattered nodes - faint -->
+  <g fill="#00c9ff" filter="url(#nn-glow-sm)" opacity="0.4">
+    <circle cx="20" cy="30" r="2.5"/>
+    <circle cx="70" cy="40" r="2"/>
+    <circle cx="55" cy="70" r="2"/>
+    <circle cx="40" cy="115" r="2"/>
+    <circle cx="25" cy="160" r="2"/>
+    <circle cx="18" cy="205" r="2"/>
+    <circle cx="30" cy="250" r="2"/>
+    <circle cx="55" cy="295" r="2"/>
+    <circle cx="85" cy="340" r="2.5"/>
+    <circle cx="150" cy="355" r="2.5"/>
+    <circle cx="215" cy="340" r="2.5"/>
+    <circle cx="245" cy="295" r="2"/>
+    <circle cx="270" cy="250" r="2"/>
+    <circle cx="282" cy="205" r="2"/>
+    <circle cx="275" cy="160" r="2"/>
+    <circle cx="260" cy="115" r="2"/>
+    <circle cx="245" cy="70" r="2"/>
+    <circle cx="230" cy="40" r="2"/>
+    <circle cx="280" cy="30" r="2.5"/>
+  </g>
+
+  <!-- Mid-layer nodes -->
+  <g fill="#00ff88" filter="url(#nn-glow-sm)" opacity="0.5">
+    <circle cx="95" cy="70" r="3"/>
+    <circle cx="205" cy="70" r="3"/>
+    <circle cx="115" cy="105" r="2.5"/>
+    <circle cx="185" cy="105" r="2.5"/>
+    <circle cx="100" cy="140" r="2.5"/>
+    <circle cx="200" cy="140" r="2.5"/>
+    <circle cx="90" cy="175" r="2.5"/>
+    <circle cx="210" cy="175" r="2.5"/>
+    <circle cx="95" cy="210" r="2.5"/>
+    <circle cx="205" cy="210" r="2.5"/>
+    <circle cx="105" cy="245" r="2.5"/>
+    <circle cx="195" cy="245" r="2.5"/>
+    <circle cx="120" cy="280" r="3"/>
+    <circle cx="180" cy="280" r="3"/>
+    <circle cx="110" cy="315" r="2.5"/>
+    <circle cx="190" cy="315" r="2.5"/>
+    <circle cx="115" cy="350" r="2.5"/>
+    <circle cx="185" cy="350" r="2.5"/>
+  </g>
+
+  <!-- Core face nodes - bright -->
+  <g filter="url(#nn-glow-md)">
+    <!-- forehead -->
+    <circle cx="150" cy="105" r="3.5" fill="#00ff88" opacity="0.9"/>
+    <circle cx="130" cy="115" r="2.5" fill="#00ff88" opacity="0.8"/>
+    <circle cx="170" cy="115" r="2.5" fill="#00ff88" opacity="0.8"/>
+    <circle cx="120" cy="132" r="2.5" fill="#00ff88" opacity="0.75"/>
+    <circle cx="180" cy="132" r="2.5" fill="#00ff88" opacity="0.75"/>
+    <circle cx="150" cy="142" r="3" fill="#00ff88" opacity="0.85"/>
+    <circle cx="128" cy="148" r="2.5" fill="#00ff88" opacity="0.8"/>
+    <circle cx="172" cy="148" r="2.5" fill="#00ff88" opacity="0.8"/>
+    <!-- eyes - bigger, brighter -->
+    <circle cx="120" cy="163" r="5" fill="#00c9ff" opacity="0.95"/>
+    <circle cx="180" cy="163" r="5" fill="#00c9ff" opacity="0.95"/>
+    <!-- eye surrounds -->
+    <circle cx="112" cy="175" r="2.5" fill="#00ff88" opacity="0.6"/>
+    <circle cx="188" cy="175" r="2.5" fill="#00ff88" opacity="0.6"/>
+    <!-- nose area -->
+    <circle cx="127" cy="175" r="2" fill="#00ff88" opacity="0.7"/>
+    <circle cx="173" cy="175" r="2" fill="#00ff88" opacity="0.7"/>
+    <circle cx="140" cy="185" r="2" fill="#00ff88" opacity="0.65"/>
+    <circle cx="160" cy="185" r="2" fill="#00ff88" opacity="0.65"/>
+    <circle cx="150" cy="192" r="3" fill="#00ff88" opacity="0.8"/>
+    <!-- mouth area -->
+    <circle cx="145" cy="208" r="2" fill="#00ff88" opacity="0.7"/>
+    <circle cx="155" cy="208" r="2" fill="#00ff88" opacity="0.7"/>
+    <circle cx="138" cy="215" r="2.5" fill="#00ff88" opacity="0.75"/>
+    <circle cx="162" cy="215" r="2.5" fill="#00ff88" opacity="0.75"/>
+    <circle cx="150" cy="222" r="3" fill="#00ff88" opacity="0.8"/>
+    <!-- jaw -->
+    <circle cx="110" cy="195" r="2" fill="#00ff88" opacity="0.6"/>
+    <circle cx="190" cy="195" r="2" fill="#00ff88" opacity="0.6"/>
+    <circle cx="120" cy="210" r="2" fill="#00ff88" opacity="0.6"/>
+    <circle cx="180" cy="210" r="2" fill="#00ff88" opacity="0.6"/>
+    <circle cx="130" cy="220" r="2" fill="#00ff88" opacity="0.65"/>
+    <circle cx="170" cy="220" r="2" fill="#00ff88" opacity="0.65"/>
+    <!-- neck/body top -->
+    <circle cx="148" cy="235" r="2.5" fill="#00ff88" opacity="0.7"/>
+    <circle cx="150" cy="272" r="3" fill="#00ff88" opacity="0.7"/>
+    <circle cx="140" cy="258" r="2" fill="#00ff88" opacity="0.55"/>
+    <circle cx="160" cy="258" r="2" fill="#00ff88" opacity="0.55"/>
+    <circle cx="150" cy="360" r="3" fill="#00c9ff" opacity="0.5"/>
+  </g>
+
+  <!-- Eye highlight glow -->
+  <g filter="url(#nn-glow-lg)">
+    <circle cx="120" cy="163" r="4" fill="#00c9ff" opacity="0.7"/>
+    <circle cx="180" cy="163" r="4" fill="#00c9ff" opacity="0.7"/>
+    <circle cx="150" cy="105" r="3" fill="#00ff88" opacity="0.5"/>
+  </g>
+
+  <!-- Corner decorations -->
+  <g stroke="#00ff88" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="0" x2="20" y2="0"/>
+    <line x1="0" y1="0" x2="0" y2="20"/>
+    <line x1="300" y1="0" x2="280" y2="0"/>
+    <line x1="300" y1="0" x2="300" y2="20"/>
+    <line x1="0" y1="370" x2="20" y2="370"/>
+    <line x1="0" y1="370" x2="0" y2="350"/>
+    <line x1="300" y1="370" x2="280" y2="370"/>
+    <line x1="300" y1="370" x2="300" y2="350"/>
+  </g>
+
+  <!-- Label -->
+  <text x="68" y="358" font-family="monospace" font-size="7" fill="#00c9ff" opacity="0.4">NEURAL_PORTRAIT::RENDER</text>
+</svg>

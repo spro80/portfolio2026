@@ -1,0 +1,157 @@
+<svg viewBox="0 0 300 370" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="mn-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00c9ff"/>
+    </linearGradient>
+    <linearGradient id="mn-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <filter id="mn-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="370" fill="#0a0a0f"/>
+
+  <!-- Hexagon grid background -->
+  <g opacity="0.05" stroke="#00ff88" stroke-width="0.5">
+    <!-- Row 1 -->
+    <polygon points="40,15 60,4 80,15 80,37 60,48 40,37"/>
+    <polygon points="100,15 120,4 140,15 140,37 120,48 100,37"/>
+    <polygon points="160,15 180,4 200,15 200,37 180,48 160,37"/>
+    <polygon points="220,15 240,4 260,15 260,37 240,48 220,37"/>
+    <!-- Row 2 -->
+    <polygon points="10,59 30,48 50,59 50,81 30,92 10,81"/>
+    <polygon points="70,59 90,48 110,59 110,81 90,92 70,81"/>
+    <polygon points="130,59 150,48 170,59 170,81 150,92 130,81"/>
+    <polygon points="190,59 210,48 230,59 230,81 210,92 190,81"/>
+    <polygon points="250,59 270,48 290,59 290,81 270,92 250,81"/>
+    <!-- Row 3 -->
+    <polygon points="40,103 60,92 80,103 80,125 60,136 40,125"/>
+    <polygon points="100,103 120,92 140,103 140,125 120,136 100,125"/>
+    <polygon points="160,103 180,92 200,103 200,125 180,136 160,125"/>
+    <polygon points="220,103 240,92 260,103 260,125 240,136 220,125"/>
+    <!-- Row 4 -->
+    <polygon points="10,147 30,136 50,147 50,169 30,180 10,169"/>
+    <polygon points="70,147 90,136 110,147 110,169 90,180 70,169"/>
+    <polygon points="130,147 150,136 170,147 170,169 150,180 130,169"/>
+    <polygon points="190,147 210,136 230,147 230,169 210,180 190,169"/>
+    <polygon points="250,147 270,136 290,147 290,169 270,180 250,169"/>
+    <!-- Row 5 -->
+    <polygon points="40,191 60,180 80,191 80,213 60,224 40,213"/>
+    <polygon points="100,191 120,180 140,191 140,213 120,224 100,213"/>
+    <polygon points="160,191 180,180 200,191 200,213 180,224 160,213"/>
+    <polygon points="220,191 240,180 260,191 260,213 240,224 220,213"/>
+    <!-- Row 6 -->
+    <polygon points="10,235 30,224 50,235 50,257 30,268 10,257"/>
+    <polygon points="70,235 90,224 110,235 110,257 90,268 70,257"/>
+    <polygon points="130,235 150,224 170,235 170,257 150,268 130,257"/>
+    <polygon points="190,235 210,224 230,235 230,257 210,268 190,257"/>
+    <polygon points="250,235 270,224 290,235 290,257 270,268 250,257"/>
+    <!-- Row 7 -->
+    <polygon points="40,279 60,268 80,279 80,301 60,312 40,301"/>
+    <polygon points="100,279 120,268 140,279 140,301 120,312 100,301"/>
+    <polygon points="160,279 180,268 200,279 200,301 180,312 160,301"/>
+    <polygon points="220,279 240,268 260,279 260,301 240,312 220,301"/>
+    <!-- Row 8 -->
+    <polygon points="10,323 30,312 50,323 50,345 30,356 10,345"/>
+    <polygon points="70,323 90,312 110,323 110,345 90,356 70,345"/>
+    <polygon points="130,323 150,312 170,323 170,345 150,356 130,345"/>
+    <polygon points="190,323 210,312 230,323 230,345 210,356 190,345"/>
+    <polygon points="250,323 270,312 290,323 290,345 270,356 250,345"/>
+  </g>
+
+  <!-- Body silhouette - geometric -->
+  <path d="M80 370 L80 278 Q80 255 150 250 Q220 255 220 278 L220 370Z"
+        fill="url(#mn-body)" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Collar geometric -->
+  <path d="M118 258 L150 275 L182 258" stroke="url(#mn-accent)" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="138" y="232" width="24" height="24" fill="#111118"/>
+
+  <!-- Head - clean circle -->
+  <circle cx="150" cy="168" r="70" fill="#111118" stroke="#1e1e2e" stroke-width="1.5"/>
+
+  <!-- Inner head accent ring -->
+  <circle cx="150" cy="168" r="68" fill="none" stroke="url(#mn-accent)" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Ears -->
+  <rect x="78" y="160" width="10" height="20" rx="5" fill="#111118" stroke="#1e1e2e" stroke-width="1"/>
+  <rect x="212" y="160" width="10" height="20" rx="5" fill="#111118" stroke="#1e1e2e" stroke-width="1"/>
+
+  <!-- Hair - simple flat top geometric -->
+  <path d="M82 148 L82 118 L218 118 L218 148 Q208 104 150 102 Q92 104 82 148Z"
+        fill="#0d0d14"/>
+  <rect x="82" y="112" width="136" height="6" rx="2" fill="#0a0a0f"/>
+
+  <!-- Eyebrows - minimal lines -->
+  <line x1="116" y1="150" x2="140" y2="148" stroke="url(#mn-accent)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="160" y1="148" x2="184" y2="150" stroke="url(#mn-accent)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left eye - bar style -->
+  <g filter="url(#mn-glow)">
+    <rect x="112" y="160" width="30" height="10" rx="5" fill="#0a0a0f" stroke="#00ff88" stroke-width="1"/>
+    <rect x="116" y="162" width="22" height="6" rx="3" fill="#00ff88" opacity="0.9"/>
+  </g>
+
+  <!-- Right eye - bar style -->
+  <g filter="url(#mn-glow)">
+    <rect x="158" y="160" width="30" height="10" rx="5" fill="#0a0a0f" stroke="#00c9ff" stroke-width="1"/>
+    <rect x="162" y="162" width="22" height="6" rx="3" fill="#00c9ff" opacity="0.9"/>
+  </g>
+
+  <!-- Nose - minimal dot -->
+  <circle cx="150" cy="192" r="2" fill="#1e1e2e"/>
+
+  <!-- Mouth - single line -->
+  <line x1="132" y1="212" x2="168" y2="212" stroke="url(#mn-accent)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Floating geometric elements -->
+  <g filter="url(#mn-glow)">
+    <!-- Top left triangle -->
+    <polygon points="30,50 45,25 60,50" stroke="#00ff88" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <!-- Top right diamond -->
+    <polygon points="255,30 270,15 285,30 270,45" stroke="#00c9ff" stroke-width="0.8" fill="none" opacity="0.4"/>
+    <!-- Bottom left square -->
+    <rect x="20" y="290" width="20" height="20" stroke="#00ff88" stroke-width="0.8" fill="none" opacity="0.3" transform="rotate(45,30,300)"/>
+    <!-- Bottom right circle -->
+    <circle cx="270" cy="300" r="12" stroke="#00c9ff" stroke-width="0.8" fill="none" opacity="0.3"/>
+    <circle cx="270" cy="300" r="6" stroke="#00c9ff" stroke-width="0.8" fill="none" opacity="0.2"/>
+  </g>
+
+  <!-- Accent dot nodes -->
+  <g filter="url(#mn-glow)">
+    <circle cx="30" cy="50" r="2.5" fill="#00ff88" opacity="0.6"/>
+    <circle cx="45" cy="25" r="2.5" fill="#00ff88" opacity="0.6"/>
+    <circle cx="60" cy="50" r="2.5" fill="#00ff88" opacity="0.6"/>
+    <circle cx="255" cy="30" r="2.5" fill="#00c9ff" opacity="0.6"/>
+    <circle cx="270" cy="15" r="2.5" fill="#00c9ff" opacity="0.6"/>
+    <circle cx="285" cy="30" r="2.5" fill="#00c9ff" opacity="0.6"/>
+  </g>
+
+  <!-- Vertical accent line left -->
+  <line x1="18" y1="80" x2="18" y2="260" stroke="url(#mn-accent)" stroke-width="0.5" opacity="0.2"/>
+  <!-- Vertical accent line right -->
+  <line x1="282" y1="80" x2="282" y2="260" stroke="url(#mn-accent)" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Corner brackets -->
+  <g stroke="url(#mn-accent)" stroke-width="1.2" opacity="0.6">
+    <line x1="0" y1="0" x2="22" y2="0"/>
+    <line x1="0" y1="0" x2="0" y2="22"/>
+    <line x1="300" y1="0" x2="278" y2="0"/>
+    <line x1="300" y1="0" x2="300" y2="22"/>
+    <line x1="0" y1="370" x2="22" y2="370"/>
+    <line x1="0" y1="370" x2="0" y2="348"/>
+    <line x1="300" y1="370" x2="278" y2="370"/>
+    <line x1="300" y1="370" x2="300" y2="348"/>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="88" y="358" font-family="monospace" font-size="7" fill="#00ff88" opacity="0.4">MINIMAL_AI_PORTRAIT</text>
+</svg>

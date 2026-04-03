@@ -1,0 +1,243 @@
+<svg viewBox="0 0 300 370" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <radialGradient id="cy-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0d0518"/>
+      <stop offset="100%" stop-color="#050108"/>
+    </radialGradient>
+    <radialGradient id="cy-face" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1a0d2e"/>
+      <stop offset="100%" stop-color="#0d0518"/>
+    </radialGradient>
+    <linearGradient id="cy-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0d2e"/>
+      <stop offset="100%" stop-color="#050108"/>
+    </linearGradient>
+    <linearGradient id="cy-implant" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff00aa"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <filter id="cy-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cy-strong-glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="370" fill="url(#cy-bg)"/>
+
+  <!-- Scan lines -->
+  <g opacity="0.06">
+    <rect x="0" y="0" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="4" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="8" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="12" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="16" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="20" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="24" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="28" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="32" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="36" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="40" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="44" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="48" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="52" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="56" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="60" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="64" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="68" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="72" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="76" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="80" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="84" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="88" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="92" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="96" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="100" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="104" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="108" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="112" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="116" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="120" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="124" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="128" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="132" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="136" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="140" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="144" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="148" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="152" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="156" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="160" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="164" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="168" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="172" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="176" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="180" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="184" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="188" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="192" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="196" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="200" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="204" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="208" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="212" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="216" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="220" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="224" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="228" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="232" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="236" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="240" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="244" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="248" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="252" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="256" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="260" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="264" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="268" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="272" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="276" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="280" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="284" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="288" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="292" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="296" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="300" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="304" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="308" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="312" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="316" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="320" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="324" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="328" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="332" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="336" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="340" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="344" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="348" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="352" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="356" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="360" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="364" width="300" height="1" fill="#ff00aa"/>
+    <rect x="0" y="368" width="300" height="1" fill="#ff00aa"/>
+  </g>
+
+  <!-- Body -->
+  <path d="M60 370 Q60 260 150 250 Q240 260 240 370Z" fill="url(#cy-body)"/>
+
+  <!-- Jacket / high collar -->
+  <path d="M95 265 L110 248 L150 272 L190 248 L205 265 L210 370 L90 370Z"
+        fill="#120820" stroke="#ff00aa" stroke-width="0.6" opacity="0.8"/>
+  <path d="M130 258 L150 272 L170 258" stroke="#00e5ff" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Circuit lines on jacket -->
+  <g stroke="#ff00aa" stroke-width="0.6" opacity="0.3">
+    <line x1="105" y1="290" x2="130" y2="290"/>
+    <line x1="130" y1="290" x2="130" y2="315"/>
+    <circle cx="130" cy="315" r="2.5" fill="#ff00aa" opacity="0.6"/>
+    <line x1="170" y1="290" x2="195" y2="290"/>
+    <line x1="170" y1="290" x2="170" y2="315"/>
+    <circle cx="170" cy="315" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <line x1="130" y1="315" x2="170" y2="315"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="136" y="230" width="28" height="26" rx="3" fill="#110820"/>
+
+  <!-- Head -->
+  <ellipse cx="150" cy="168" rx="65" ry="70" fill="url(#cy-face)" stroke="#2a1040" stroke-width="1"/>
+
+  <!-- Cybernetic plate - right side of face -->
+  <path d="M195 145 Q215 160 212 185 Q208 200 200 205 Q215 185 210 160 Z"
+        fill="#0a0015" stroke="url(#cy-implant)" stroke-width="1" opacity="0.8"/>
+  <g stroke="#00e5ff" stroke-width="0.7" opacity="0.5">
+    <line x1="200" y1="152" x2="210" y2="158"/>
+    <line x1="202" y1="162" x2="212" y2="166"/>
+    <line x1="203" y1="172" x2="212" y2="175"/>
+    <line x1="202" y1="182" x2="210" y2="184"/>
+    <line x1="200" y1="192" x2="207" y2="193"/>
+  </g>
+  <g filter="url(#cy-glow)">
+    <circle cx="207" cy="155" r="2" fill="#00e5ff" opacity="0.8"/>
+    <circle cx="210" cy="172" r="1.5" fill="#ff00aa" opacity="0.8"/>
+    <circle cx="207" cy="189" r="2" fill="#00e5ff" opacity="0.8"/>
+  </g>
+
+  <!-- Hair - styled upward slightly -->
+  <path d="M86 148 Q90 100 150 95 Q210 100 214 148 Q205 110 150 108 Q95 110 86 148Z"
+        fill="#0a0015"/>
+  <!-- Hair texture lines -->
+  <g stroke="#1a0530" stroke-width="1.5" opacity="0.7">
+    <path d="M100 130 Q105 112 120 108"/>
+    <path d="M120 120 Q128 105 145 103"/>
+    <path d="M170 120 Q178 105 190 112"/>
+    <path d="M185 130 Q193 115 200 120"/>
+  </g>
+
+  <!-- Eyebrows - sharper -->
+  <path d="M115 152 L138 148" stroke="#4a1060" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M162 148 L185 152" stroke="#4a1060" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left eye - magenta/pink -->
+  <g filter="url(#cy-glow)">
+    <ellipse cx="127" cy="165" rx="14" ry="10" fill="#0d0015" stroke="#ff00aa" stroke-width="1" opacity="0.95"/>
+    <circle cx="127" cy="165" r="6" fill="#200010"/>
+    <circle cx="127" cy="165" r="4" fill="#ff00aa" opacity="0.9"/>
+    <circle cx="127" cy="165" r="2" fill="#ff66cc"/>
+  </g>
+  <circle cx="130" cy="162" r="1.5" fill="white" opacity="0.7"/>
+
+  <!-- Right eye - cyan -->
+  <g filter="url(#cy-strong-glow)">
+    <ellipse cx="173" cy="165" rx="14" ry="10" fill="#0d0015" stroke="#00e5ff" stroke-width="1" opacity="0.95"/>
+    <circle cx="173" cy="165" r="6" fill="#00101a"/>
+    <circle cx="173" cy="165" r="4" fill="#00e5ff" opacity="0.9"/>
+    <circle cx="173" cy="165" r="2" fill="#80f0ff"/>
+  </g>
+  <circle cx="176" cy="162" r="1.5" fill="white" opacity="0.7"/>
+
+  <!-- Nose -->
+  <path d="M146 178 Q142 190 148 196 Q152 198 157 196 Q162 190 154 178"
+        stroke="#2a1040" stroke-width="1.2" fill="none"/>
+
+  <!-- Mouth -->
+  <path d="M133 210 Q150 218 167 210"
+        stroke="#3a1050" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Ear left -->
+  <ellipse cx="85" cy="170" rx="8" ry="12" fill="#110820" stroke="#2a1040" stroke-width="0.8"/>
+  <!-- Ear implant left -->
+  <g filter="url(#cy-glow)">
+    <circle cx="85" cy="170" r="3" fill="#ff00aa" opacity="0.6"/>
+    <circle cx="85" cy="163" r="1.5" fill="#00e5ff" opacity="0.5"/>
+  </g>
+
+  <!-- Ear right -->
+  <ellipse cx="215" cy="170" rx="8" ry="12" fill="#110820" stroke="#2a1040" stroke-width="0.8"/>
+
+  <!-- Glitch effect bars -->
+  <rect x="88" y="172" width="45" height="2" fill="#ff00aa" opacity="0.12"/>
+  <rect x="88" y="172" width="45" height="2" fill="#ff00aa" opacity="0.08" transform="translate(3,0)"/>
+
+  <!-- Corner HUD -->
+  <g stroke="#ff00aa" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="0" x2="25" y2="0"/>
+    <line x1="0" y1="0" x2="0" y2="25"/>
+    <line x1="300" y1="0" x2="275" y2="0"/>
+    <line x1="300" y1="0" x2="300" y2="25"/>
+  </g>
+  <g stroke="#00e5ff" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="370" x2="25" y2="370"/>
+    <line x1="0" y1="370" x2="0" y2="345"/>
+    <line x1="300" y1="370" x2="275" y2="370"/>
+    <line x1="300" y1="370" x2="300" y2="345"/>
+  </g>
+
+  <!-- Status text -->
+  <text x="10" y="358" font-family="monospace" font-size="7" fill="#ff00aa" opacity="0.5">CYBER_UNIT::ONLINE</text>
+  <text x="218" y="358" font-family="monospace" font-size="7" fill="#00e5ff" opacity="0.5">2077</text>
+</svg>
