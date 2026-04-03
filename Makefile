@@ -1,13 +1,13 @@
-.PHONY: start build install clean lint
+.PHONY: install start build clean lint
+
+install:
+	npm install
 
 start:
 	npm start
 
 build:
 	CI=false npm run build
-
-install:
-	npm install
 
 clean:
 	rm -rf build node_modules
