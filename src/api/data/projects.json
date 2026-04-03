@@ -12,15 +12,15 @@
     "labelColor": "var(--accent)",
     "title": "Análisis de Documentos Banco Central",
     "desc": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
-    "stack": ["Python", "FastAPI", "Pinecone", "OpenAI", "Docker"],
+    "stack": ["Python", "FastAPI", "Pinecone", "Vector Database", "OpenAI", "Docker"],
     "code": "docs = pinecone.index\n  .query(\n    vector=embed(query),\n    top_k=5\n  )\n\nanswer = openai.chat\n  .completions.create(\n    model='gpt-4',\n    messages=[{\n      'role': 'system',\n      'content': docs.context\n    },{\n      'role': 'user',\n      'content': query\n    }]\n  )"
   },
   {
-    "label": "CLOUD",
+    "label": "FINTECH / AI",
     "labelColor": "#a78bfa",
-    "title": "Infraestructura K8s / AWS",
-    "desc": "Migración de monolito a microservicios en EKS con Terraform. Reducción de costos 40% y tiempo de deploy de horas a minutos.",
-    "stack": ["AWS EKS", "Terraform", "Helm", "ArgoCD"],
-    "code": "resource \"aws_eks\" {\n  name = \"prod-cluster\"\n  node_groups = {\n    min_size = 2\n    max_size = 10\n    instance =\n      \"t3.medium\"\n  }\n}"
+    "title": "Análisis Bursátil y Cripto con IA",
+    "desc": "Plataforma de análisis técnico y fundamental para acciones y criptomonedas. Calcula indicadores RSI, MACD, Bollinger Bands y genera señales de trading con modelos de IA entrenados sobre datos históricos.",
+    "stack": ["Python", "FastAPI", "OpenAI", "Pandas", "AWS"],
+    "code": "df = fetch_ohlcv(symbol)\n\ndf['rsi']  = ta.rsi(df.close)\ndf['macd'] = ta.macd(df.close)\ndf['bb']   = ta.bbands(df.close)\n\nsignal = ai_model.predict({\n  'technical': df.tail(30),\n  'sentiment': gpt_sentiment(\n    news_feed(symbol)\n  )\n})"
   }
 ]
