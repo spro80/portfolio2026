@@ -2,25 +2,25 @@
   {
     "label": "AI / BACKEND",
     "labelColor": "var(--accent2)",
+    "illustrationType": "chat",
     "title": "Terapeuta Virtual con IA",
     "desc": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
-    "stack": ["Python", "React", "OpenAI", "MongoDB", "Docker", "AWS"],
-    "code": "session = mongo.sessions\n  .find_one({ 'userId': uid })\n\nreply = openai.chat\n  .completions.create(\n    model='gpt-4',\n    messages=[\n      *session['history'],\n      { 'role': 'user',\n        'content': msg }\n    ]\n  )"
+    "stack": ["Python", "React", "OpenAI", "MongoDB", "Docker", "AWS"]
   },
   {
     "label": "RAG / AI",
     "labelColor": "var(--accent)",
+    "illustrationType": "rag",
     "title": "Análisis de Documentos Banco Central",
     "desc": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
-    "stack": ["Python", "FastAPI", "Pinecone", "Vector Database", "OpenAI", "Docker"],
-    "code": "docs = pinecone.index\n  .query(\n    vector=embed(query),\n    top_k=5\n  )\n\nanswer = openai.chat\n  .completions.create(\n    model='gpt-4',\n    messages=[{\n      'role': 'system',\n      'content': docs.context\n    },{\n      'role': 'user',\n      'content': query\n    }]\n  )"
+    "stack": ["Python", "FastAPI", "Pinecone", "Vector Database", "OpenAI", "Docker"]
   },
   {
     "label": "FINTECH / AI",
     "labelColor": "#a78bfa",
+    "illustrationType": "chart",
     "title": "Análisis Bursátil y Cripto con IA",
     "desc": "Plataforma de análisis técnico y fundamental para acciones y criptomonedas. Calcula indicadores RSI, MACD, Bollinger Bands y genera señales de trading con modelos de IA entrenados sobre datos históricos.",
-    "stack": ["Python", "FastAPI", "OpenAI", "Pandas", "AWS"],
-    "code": "df = fetch_ohlcv(symbol)\n\ndf['rsi']  = ta.rsi(df.close)\ndf['macd'] = ta.macd(df.close)\ndf['bb']   = ta.bbands(df.close)\n\nsignal = ai_model.predict({\n  'technical': df.tail(30),\n  'sentiment': gpt_sentiment(\n    news_feed(symbol)\n  )\n})"
+    "stack": ["Python", "FastAPI", "OpenAI", "Pandas", "AWS"]
   }
 ]
