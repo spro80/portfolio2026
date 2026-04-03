@@ -1,19 +1,19 @@
 [
   {
-    "label": "BACKEND",
+    "label": "AI / BACKEND",
     "labelColor": "var(--accent2)",
-    "title": "Plataforma FinTech API",
-    "desc": "API REST para procesamiento de pagos con autenticación JWT, rate limiting y alta disponibilidad. 99.9% uptime garantizado en producción.",
-    "stack": ["Node.js", "PostgreSQL", "Redis", "Docker"],
-    "code": "const api = new REST({\n  auth: JWT,\n  cache: Redis,\n  db: PostgreSQL\n})\n\napi.get('/users',\n  async (req, res) => {\n    const data = await\n      db.query(sql)\n  }\n)"
+    "title": "Terapeuta Virtual con IA",
+    "desc": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
+    "stack": ["Python", "React", "OpenAI", "MongoDB", "Docker", "AWS"],
+    "code": "session = mongo.sessions\n  .find_one({ 'userId': uid })\n\nreply = openai.chat\n  .completions.create(\n    model='gpt-4',\n    messages=[\n      *session['history'],\n      { 'role': 'user',\n        'content': msg }\n    ]\n  )"
   },
   {
-    "label": "FRONTEND",
+    "label": "RAG / AI",
     "labelColor": "var(--accent)",
-    "title": "Dashboard Analytics SPA",
-    "desc": "Single Page App en React con datos en tiempo real, gráficos interactivos y reportes exportables para equipos de 50+ usuarios.",
-    "stack": ["React", "GraphQL", "WebSocket", "D3.js"],
-    "code": "function Dashboard() {\n  const [data] = useQuery(\n    ANALYTICS_GQL\n  )\n  return (\n    <Charts\n      data={data}\n      realtime={true}\n      theme=\"dark\"\n    />\n  )\n}"
+    "title": "Análisis de Documentos Banco Central",
+    "desc": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
+    "stack": ["Python", "FastAPI", "Pinecone", "OpenAI", "Docker"],
+    "code": "docs = pinecone.index\n  .query(\n    vector=embed(query),\n    top_k=5\n  )\n\nanswer = openai.chat\n  .completions.create(\n    model='gpt-4',\n    messages=[{\n      'role': 'system',\n      'content': docs.context\n    },{\n      'role': 'user',\n      'content': query\n    }]\n  )"
   },
   {
     "label": "CLOUD",
