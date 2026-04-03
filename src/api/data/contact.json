@@ -1,0 +1,6 @@
+[
+  { "iconType": "mail",     "label": "Email",     "value": "spro80@gmail.com" },
+  { "iconType": "location", "label": "Ubicación", "value": "Santiago, Chile · Remoto" },
+  { "iconType": "linkedin", "label": "LinkedIn",  "value": "https://www.linkedin.com/in/david-spiro-diaz-sierra/" },
+  { "iconType": "github",   "label": "GitHub",    "value": "https://github.com/spro80" }
+]

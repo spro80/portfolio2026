@@ -1,0 +1,38 @@
+[
+  {
+    "iconType": "code",
+    "title": "Desarrollo Frontend",
+    "desc": "Interfaces modernas, responsivas y de alto rendimiento con React, Vue o Angular. UX excepcional con código limpio y accesible.",
+    "tags": ["React", "Vue", "Angular", "Bootstrap"]
+  },
+  {
+    "iconType": "server",
+    "title": "Desarrollo Backend",
+    "desc": "APIs robustas y microservicios escalables. Diseño de bases de datos, autenticación, integración de servicios y optimización de rendimiento.",
+    "tags": ["Node.js", "Python", "Java", "REST/GraphQL"]
+  },
+  {
+    "iconType": "cloud",
+    "title": "Cloud & DevOps",
+    "desc": "Arquitectura cloud en AWS, Azure o GCP. CI/CD pipelines, containerización con Docker/Kubernetes e infraestructura como código con Terraform.",
+    "tags": ["AWS", "Docker", "Kubernetes", "Terraform"]
+  },
+  {
+    "iconType": "edit",
+    "title": "Consultoría Técnica",
+    "desc": "Revisión de arquitectura, code reviews, selección de stack tecnológico y roadmap técnico. Apoyo en decisiones estratégicas de producto.",
+    "tags": ["Arquitectura", "Code Review", "Tech Lead"]
+  },
+  {
+    "iconType": "alert",
+    "title": "Auditoría & Performance",
+    "desc": "Diagnóstico de sistemas existentes, detección de cuellos de botella, seguridad, optimización de queries y mejora de tiempos de respuesta.",
+    "tags": ["Performance", "Seguridad", "Optimización"]
+  },
+  {
+    "iconType": "activity",
+    "title": "MVP & Startups",
+    "desc": "Desarrollo ágil de productos mínimos viables. Stack correcto, tiempo al mercado rápido y base de código escalable desde el día uno.",
+    "tags": ["MVP", "Agile", "Full Stack"]
+  }
+]

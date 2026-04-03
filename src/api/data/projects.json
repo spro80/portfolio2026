@@ -1,0 +1,26 @@
+[
+  {
+    "label": "BACKEND",
+    "labelColor": "var(--accent2)",
+    "title": "Plataforma FinTech API",
+    "desc": "API REST para procesamiento de pagos con autenticación JWT, rate limiting y alta disponibilidad. 99.9% uptime garantizado en producción.",
+    "stack": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+    "code": "const api = new REST({\n  auth: JWT,\n  cache: Redis,\n  db: PostgreSQL\n})\n\napi.get('/users',\n  async (req, res) => {\n    const data = await\n      db.query(sql)\n  }\n)"
+  },
+  {
+    "label": "FRONTEND",
+    "labelColor": "var(--accent)",
+    "title": "Dashboard Analytics SPA",
+    "desc": "Single Page App en React con datos en tiempo real, gráficos interactivos y reportes exportables para equipos de 50+ usuarios.",
+    "stack": ["React", "GraphQL", "WebSocket", "D3.js"],
+    "code": "function Dashboard() {\n  const [data] = useQuery(\n    ANALYTICS_GQL\n  )\n  return (\n    <Charts\n      data={data}\n      realtime={true}\n      theme=\"dark\"\n    />\n  )\n}"
+  },
+  {
+    "label": "CLOUD",
+    "labelColor": "#a78bfa",
+    "title": "Infraestructura K8s / AWS",
+    "desc": "Migración de monolito a microservicios en EKS con Terraform. Reducción de costos 40% y tiempo de deploy de horas a minutos.",
+    "stack": ["AWS EKS", "Terraform", "Helm", "ArgoCD"],
+    "code": "resource \"aws_eks\" {\n  name = \"prod-cluster\"\n  node_groups = {\n    min_size = 2\n    max_size = 10\n    instance =\n      \"t3.medium\"\n  }\n}"
+  }
+]
