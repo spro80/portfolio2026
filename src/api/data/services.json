@@ -2,19 +2,19 @@
   {
     "iconType": "code",
     "title": "Desarrollo Frontend",
-    "desc": "Interfaces modernas, responsivas y de alto rendimiento con React, Vue o Angular. UX excepcional con código limpio y accesible.",
-    "tags": ["React", "Vue", "Angular", "Bootstrap"]
+    "desc": "Interfaces modernas, responsivas y de alto rendimiento con React. UX con código limpio y accesible.",
+    "tags": ["React", "Bootstrap"]
   },
   {
     "iconType": "server",
     "title": "Desarrollo Backend",
     "desc": "APIs robustas y microservicios escalables. Diseño de bases de datos, autenticación, integración de servicios y optimización de rendimiento.",
-    "tags": ["Node.js", "Python", "Java", "REST/GraphQL"]
+    "tags": ["Node.js", "Python", "Java", "REST"]
   },
   {
     "iconType": "cloud",
     "title": "Cloud & DevOps",
-    "desc": "Arquitectura cloud en AWS, Azure o GCP. CI/CD pipelines, containerización con Docker/Kubernetes e infraestructura como código con Terraform.",
+    "desc": "Arquitectura cloud en AWS. CI/CD pipelines, containerización con Docker e infraestructura como código con Terraform.",
     "tags": ["AWS", "Docker", "Kubernetes", "Terraform"]
   },
   {

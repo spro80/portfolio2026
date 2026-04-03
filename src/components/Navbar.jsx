@@ -70,7 +70,7 @@ export default function Navbar() {
     <>
       <nav style={styles.nav}>
         <a href="#home" style={styles.logo} onClick={e => { e.preventDefault(); handleNav('#home'); }}>
-          david.dev
+          spiro.dev
         </a>
 
         {/* Desktop links */}

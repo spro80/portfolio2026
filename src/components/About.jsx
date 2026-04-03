@@ -30,7 +30,7 @@ export default function About() {
             <p className="section-tag">sobre mí</p>
             <h2 className="section-title">Construyo software que escala</h2>
             <p className="section-sub mb-4">
-              Soy David, ingeniero de software con experiencia en el ciclo completo
+              Soy Spiro, ingeniero de software con experiencia en el ciclo completo
               de desarrollo: desde arquitectura y backend hasta frontend e
               infraestructura cloud.
             </p>

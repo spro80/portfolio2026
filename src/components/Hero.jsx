@@ -95,7 +95,7 @@ export default function Hero() {
           color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px',
         }}>
           Hola, soy<br />
-          <span style={{ color: 'var(--accent)' }}>David.</span>
+          <span style={{ color: 'var(--accent)' }}>Spiro.</span>
         </h1>
 
         <p style={{

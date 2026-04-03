@@ -5,7 +5,7 @@
     "illustrationType": "chat",
     "title": "Terapeuta Virtual con IA",
     "desc": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
-    "stack": ["Python", "React", "OpenAI", "MongoDB", "Docker", "AWS"]
+    "stack": ["Python", "FastAPI", "React js", "OpenAI", "MongoDB", "Docker", "AWS"]
   },
   {
     "label": "RAG / AI",
@@ -13,7 +13,7 @@
     "illustrationType": "rag",
     "title": "Análisis de Documentos Banco Central",
     "desc": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
-    "stack": ["Python", "FastAPI", "Pinecone", "Vector Database", "OpenAI", "Docker"]
+    "stack": ["Python", "FastAPI", "API", "Pinecone", "Vector Database", "OpenAI", "Docker"]
   },
   {
     "label": "FINTECH / AI",

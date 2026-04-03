@@ -68,7 +68,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Nombre: ${form.name}\nEmail: ${form.email}\nServicio: ${form.service}\n\n${form.msg}`
     );
-    window.open(`mailto:david@tucorreo.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:spyrodiazsierra@gmail.com?subject=${subject}&body=${body}`);
     setSent(true);
     setForm({ name: '', email: '', service: '', msg: '' });
   };
