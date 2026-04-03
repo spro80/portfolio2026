@@ -144,6 +144,8 @@ export default function Contact() {
                     <option>Consultoría Técnica</option>
                     <option>Auditoría / Performance</option>
                     <option>MVP / Startup</option>
+                    <option>Inteligencia Artificial</option>
+                    <option>Otros</option>
                   </select>
                   <textarea
                     name="msg" value={form.msg} onChange={handleChange}
