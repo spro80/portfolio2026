@@ -1,18 +1,6 @@
+import { useEffect, useState } from 'react';
 import useFadeIn from './useFadeIn';
-
-const skills = [
-  'React','Vue.js','Angular','Bootstrap',
-  'Node.js','Python','Java','REST / GraphQL',
-  'AWS','Docker','Kubernetes','Terraform',
-  'PostgreSQL','MongoDB','Redis','CI/CD',
-];
-
-const timeline = [
-  { year: '2022 — Presente', role: 'Senior Software Engineer',       company: 'Freelance · Remoto — Chile y Latam' },
-  { year: '2020 — 2022',     role: 'Full Stack Developer',            company: 'Startup FinTech · Santiago, Chile'   },
-  { year: '2018 — 2020',     role: 'Backend Developer',               company: 'Consultora Tecnológica · Chile'       },
-  { year: '2014 — 2018',     role: 'Ingeniería en Informática',       company: 'Universidad · Chile'                  },
-];
+import { getSkills, getTimeline } from '../api';
 
 const cardStyle = {
   background: 'var(--card-bg)',
@@ -23,6 +11,14 @@ const cardStyle = {
 export default function About() {
   const leftRef  = useFadeIn();
   const rightRef = useFadeIn();
+
+  const [skills,   setSkills]   = useState([]);
+  const [timeline, setTimeline] = useState([]);
+
+  useEffect(() => {
+    getSkills().then(setSkills);
+    getTimeline().then(setTimeline);
+  }, []);
 
   return (
     <section id="about" style={{ padding: '6rem 0' }}>

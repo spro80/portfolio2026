@@ -52,7 +52,7 @@ const styles = {
 
 export default function Navbar() {
   const [open, setOpen]     = useState(false);
-  const [mobile, setMobile] = useState(window.innerWidth < 768);
+  const [mobile, setMobile] = useState(() => typeof window !== 'undefined' ? window.innerWidth < 768 : false);
 
   useEffect(() => {
     const onResize = () => setMobile(window.innerWidth < 768);

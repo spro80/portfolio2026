@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
-
-const stats = [
-  { num: '5+',  label: 'Años de exp.'  },
-  { num: '30+', label: 'Proyectos'     },
-  { num: '15+', label: 'Clientes'      },
-];
+import { useEffect, useRef, useState } from 'react';
+import { getStats } from '../api';
 
 export default function Hero() {
   const contentRef = useRef(null);
+  const [stats, setStats] = useState([]);
+
+  useEffect(() => {
+    getStats().then(setStats);
+  }, []);
 
   useEffect(() => {
     const el = contentRef.current;

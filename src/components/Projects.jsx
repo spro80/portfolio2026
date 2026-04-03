@@ -1,62 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useFadeIn from './useFadeIn';
-
-const projects = [
-  {
-    label: 'BACKEND',
-    labelColor: 'var(--accent2)',
-    title: 'Plataforma FinTech API',
-    desc: 'API REST para procesamiento de pagos con autenticación JWT, rate limiting y alta disponibilidad. 99.9% uptime garantizado en producción.',
-    stack: ['Node.js', 'PostgreSQL', 'Redis', 'Docker'],
-    code: `const api = new REST({
-  auth: JWT,
-  cache: Redis,
-  db: PostgreSQL
-})
-
-api.get('/users',
-  async (req, res) => {
-    const data = await
-      db.query(sql)
-  }
-)`,
-  },
-  {
-    label: 'FRONTEND',
-    labelColor: 'var(--accent)',
-    title: 'Dashboard Analytics SPA',
-    desc: 'Single Page App en React con datos en tiempo real, gráficos interactivos y reportes exportables para equipos de 50+ usuarios.',
-    stack: ['React', 'GraphQL', 'WebSocket', 'D3.js'],
-    code: `function Dashboard() {
-  const [data] = useQuery(
-    ANALYTICS_GQL
-  )
-  return (
-    <Charts
-      data={data}
-      realtime={true}
-      theme="dark"
-    />
-  )
-}`,
-  },
-  {
-    label: 'CLOUD',
-    labelColor: '#a78bfa',
-    title: 'Infraestructura K8s / AWS',
-    desc: 'Migración de monolito a microservicios en EKS con Terraform. Reducción de costos 40% y tiempo de deploy de horas a minutos.',
-    stack: ['AWS EKS', 'Terraform', 'Helm', 'ArgoCD'],
-    code: `resource "aws_eks" {
-  name = "prod-cluster"
-  node_groups = {
-    min_size = 2
-    max_size = 10
-    instance =
-      "t3.medium"
-  }
-}`,
-  },
-];
+import { getProjects } from '../api';
 
 function ProjectCard({ project }) {
   const [hovered, setHovered] = useState(false);
@@ -129,8 +73,22 @@ function ProjectCard({ project }) {
   );
 }
 
+function ProjectCol({ project }) {
+  const ref = useFadeIn();
+  return (
+    <div className="col-md-6 col-lg-4 fade-in" ref={ref}>
+      <ProjectCard project={project} />
+    </div>
+  );
+}
+
 export default function Projects() {
   const headRef = useFadeIn();
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    getProjects().then(setProjects);
+  }, []);
 
   return (
     <section id="projects" style={{ padding: '6rem 0' }}>
@@ -145,15 +103,9 @@ export default function Projects() {
         </div>
 
         <div className="row g-4">
-          {projects.map((p, i) => {
-            // eslint-disable-next-line react-hooks/rules-of-hooks
-            const ref = useFadeIn();
-            return (
-              <div key={i} className="col-md-6 col-lg-4 fade-in" ref={ref}>
-                <ProjectCard project={p} />
-              </div>
-            );
-          })}
+          {projects.map((p, i) => (
+            <ProjectCol key={i} project={p} />
+          ))}
         </div>
       </div>
     </section>
