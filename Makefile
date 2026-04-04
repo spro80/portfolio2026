@@ -1,4 +1,4 @@
-.PHONY: install start build clean lint
+.PHONY: install start build build-en build-es clean lint
 
 install:
 	npm install
@@ -6,8 +6,13 @@ install:
 start:
 	npm start
 
-build:
-	CI=false npm run build
+build: build-en
+
+build-en:
+	REACT_APP_LANG=en CI=false npm run build
+
+build-es:
+	REACT_APP_LANG=es CI=false npm run build
 
 clean:
 	rm -rf build node_modules
