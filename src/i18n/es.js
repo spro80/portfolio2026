@@ -1,0 +1,65 @@
+const es = {
+  nav: {
+    about:    'Sobre mí',
+    services: 'Servicios',
+    projects: 'Proyectos',
+    contact:  'Contacto',
+    cta:      'Contratar',
+  },
+  hero: {
+    available:   'Disponible para proyectos',
+    badge:       'AI Engineer · Software Engineer · Full Stack · Cloud',
+    greeting:    'Hola, soy',
+    description: 'Ingeniero de software especializado en arquitecturas escalables, desarrollo Full Stack y soluciones Cloud. Convierto ideas complejas en productos digitales de alto rendimiento.',
+    btnProjects: 'Ver proyectos',
+    btnContact:  'Hablemos',
+  },
+  about: {
+    tag:    'sobre mí',
+    title:  'Senior Software Engineer & AI Engineer',
+    bio1:   'Soy Spiro, ingeniero de software con más de 15 años construyendo aplicaciones backend y frontend robustas, actualmente en Walmart liderando el Order Management System del ecommerce.',
+    bio2:   'Especializado en AI Engineering: diseño y despliegue de agentes inteligentes, soluciones de IA Generativa y aplicaciones LLM usando LangChain, LangGraph y arquitecturas RAG. Amplia experiencia en microservicios, sistemas event-driven, DevOps cloud-native en AWS y Azure, y QA Automation en todos los niveles de testing.',
+    expTag: 'experiencia',
+  },
+  services: {
+    tag:      'servicios',
+    title:    '¿En qué puedo ayudarte?',
+    subtitle: 'Ofrezco servicios de desarrollo de software end-to-end adaptados a las necesidades de tu proyecto o empresa.',
+  },
+  projects: {
+    tag:      'proyectos',
+    title:    'Lo que he construido',
+    subtitle: 'Una selección de proyectos reales donde combiné IA, backend y cloud para resolver problemas concretos.',
+  },
+  contact: {
+    tag:             'contacto',
+    title:           '¿Tienes un proyecto?',
+    subtitle:        'Cuéntame sobre tu idea. Respondo en menos de 24 horas.',
+    namePlaceholder: 'Tu nombre',
+    projectType:     'Tipo de proyecto',
+    msgPlaceholder:  'Cuéntame sobre tu proyecto. ¿Qué quieres construir?',
+    send:            'Enviar mensaje →',
+    validation:      'Por favor completa nombre, email y mensaje.',
+    successTitle:    '¡Mensaje enviado!',
+    successSub:      'Te respondo en menos de 24 horas.',
+    sendAnother:     'Enviar otro mensaje',
+    infoText:        'Trabajo con clientes en Chile y Latinoamérica. Disponible para proyectos freelance, contratos long-term y consultoría puntual.',
+    options: [
+      'Inteligencia Artificial',
+      'Desarrollo Frontend',
+      'Desarrollo Backend',
+      'Full Stack',
+      'Cloud / DevOps',
+      'Consultoría Técnica',
+      'Auditoría / Performance',
+      'MVP / Startup',
+      'Otros',
+    ],
+  },
+  footer: {
+    tagline: 'AI Engineer & Full Stack · Santiago, Chile',
+    built:   'Construido con React + Bootstrap',
+  },
+};
+
+export default es;

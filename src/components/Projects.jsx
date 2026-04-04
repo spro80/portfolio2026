@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import useFadeIn from './useFadeIn';
 import { getProjects } from '../api';
+import t from '../i18n';
 
 /* ── Ilustración 1: Terapeuta Virtual ── */
 function IllustrationChat() {
@@ -365,12 +366,9 @@ export default function Projects() {
     <section id="projects" style={{ padding: '6rem 0' }}>
       <div className="container">
         <div className="text-center mb-5 fade-in" ref={headRef}>
-          <p className="section-tag">proyectos</p>
-          <h2 className="section-title">Lo que he construido</h2>
-          <p className="section-sub mx-auto">
-            Una selección de proyectos reales donde combiné IA, backend y cloud
-            para resolver problemas concretos.
-          </p>
+          <p className="section-tag">{t.projects.tag}</p>
+          <h2 className="section-title">{t.projects.title}</h2>
+          <p className="section-sub mx-auto">{t.projects.subtitle}</p>
         </div>
 
         <div className="row g-4">

@@ -1,0 +1,65 @@
+const en = {
+  nav: {
+    about:    'About',
+    services: 'Services',
+    projects: 'Projects',
+    contact:  'Contact',
+    cta:      'Hire me',
+  },
+  hero: {
+    available:   'Open to AI / Backend projects',
+    badge:       'AI Engineer · Software Engineer · Full Stack · Cloud',
+    greeting:    'Hi, I\'m',
+    description: 'Software engineer specialized in scalable architectures, Full Stack development and Cloud solutions. I turn complex ideas into high-performance digital products.',
+    btnProjects: 'View projects',
+    btnContact:  'Let\'s talk',
+  },
+  about: {
+    tag:    'about me',
+    title:  'Senior Software Engineer & AI Engineer',
+    bio1:   'I\'m Spiro, a software engineer with 15+ years building robust backend and frontend applications, currently at Walmart leading the Order Management System of their ecommerce platform.',
+    bio2:   'Specialized in AI Engineering: designing and deploying intelligent agents, Generative AI solutions and LLM applications using LangChain, LangGraph and RAG architectures. Extensive experience in microservices, event-driven systems, cloud-native DevOps on AWS and Azure, and QA Automation across all testing levels.',
+    expTag: 'experience',
+  },
+  services: {
+    tag:      'services',
+    title:    'How can I help you?',
+    subtitle: 'I offer end-to-end software development services tailored to your project or company needs.',
+  },
+  projects: {
+    tag:      'projects',
+    title:    'What I\'ve built',
+    subtitle: 'A selection of real projects where I combined AI, backend and cloud to solve concrete problems.',
+  },
+  contact: {
+    tag:           'contact',
+    title:         'Have a project?',
+    subtitle:      'Tell me about your idea. I respond within 24 hours.',
+    namePlaceholder: 'Your name',
+    projectType:   'Project type',
+    msgPlaceholder: 'Tell me about your project. What do you want to build?',
+    send:          'Send message →',
+    validation:    'Please fill in your name, email and message.',
+    successTitle:  'Message sent!',
+    successSub:    'I\'ll get back to you within 24 hours.',
+    sendAnother:   'Send another message',
+    infoText:      'Available for clients worldwide. Open to freelance projects, long-term contracts and technical consulting.',
+    options: [
+      'Artificial Intelligence',
+      'Frontend Development',
+      'Backend Development',
+      'Full Stack',
+      'Cloud / DevOps',
+      'Technical Consulting',
+      'Audit / Performance',
+      'MVP / Startup',
+      'Other',
+    ],
+  },
+  footer: {
+    tagline: 'AI Engineer & Full Stack · Santiago, Chile',
+    built:   'Built with React + Bootstrap',
+  },
+};
+
+export default en;

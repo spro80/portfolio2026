@@ -1,38 +1,44 @@
 [
   {
     "iconType": "code",
-    "title": "Desarrollo Frontend",
-    "desc": "Interfaces modernas, responsivas y de alto rendimiento con React. UX con código limpio y accesible.",
+    "title": { "es": "Desarrollo Frontend",   "en": "Frontend Development" },
+    "desc":  { "es": "Interfaces modernas, responsivas y de alto rendimiento con React. UX con código limpio y accesible.",
+               "en": "Modern, responsive, high-performance interfaces with React. Clean, accessible code with great UX." },
     "tags": ["React", "Bootstrap"]
   },
   {
     "iconType": "server",
-    "title": "Desarrollo Backend",
-    "desc": "APIs robustas y microservicios escalables. Diseño de bases de datos, autenticación, integración de servicios y optimización de rendimiento.",
-    "tags": ["Node.js", "Python", "Java", "REST"]
+    "title": { "es": "Desarrollo Backend",   "en": "Backend Development" },
+    "desc":  { "es": "APIs robustas y microservicios escalables. Diseño de bases de datos, autenticación, integración de servicios y optimización de rendimiento.",
+               "en": "Robust APIs and scalable microservices. Database design, authentication, service integration and performance optimization." },
+    "tags": ["Node.js", "Python", "Golang", "REST"]
   },
   {
     "iconType": "cloud",
-    "title": "Cloud & DevOps",
-    "desc": "Arquitectura cloud en AWS. CI/CD pipelines, containerización con Docker e infraestructura como código con Terraform.",
+    "title": { "es": "Cloud & DevOps",   "en": "Cloud & DevOps" },
+    "desc":  { "es": "Arquitectura cloud en AWS. CI/CD pipelines, containerización con Docker e infraestructura como código con Terraform.",
+               "en": "Cloud architecture on AWS. CI/CD pipelines, containerization with Docker and infrastructure as code with Terraform." },
     "tags": ["AWS", "Docker", "Kubernetes", "Terraform"]
   },
   {
+    "iconType": "activity",
+    "title": { "es": "Inteligencia Artificial",   "en": "Artificial Intelligence" },
+    "desc":  { "es": "Diseño y despliegue de agentes inteligentes, soluciones GenAI y aplicaciones LLM con LangChain, LangGraph y arquitecturas RAG.",
+               "en": "Design and deployment of intelligent agents, GenAI solutions and LLM applications using LangChain, LangGraph and RAG architectures." },
+    "tags": ["LangChain", "LangGraph", "RAG", "OpenAI", "AWS Bedrock"]
+  },
+  {
     "iconType": "edit",
-    "title": "Consultoría Técnica",
-    "desc": "Revisión de arquitectura, code reviews, selección de stack tecnológico y roadmap técnico. Apoyo en decisiones estratégicas de producto.",
-    "tags": ["Arquitectura", "Code Review", "Tech Lead"]
+    "title": { "es": "Consultoría Técnica",   "en": "Technical Consulting" },
+    "desc":  { "es": "Revisión de arquitectura, code reviews, selección de stack tecnológico y roadmap técnico. Apoyo en decisiones estratégicas de producto.",
+               "en": "Architecture reviews, code reviews, technology stack selection and technical roadmap. Support for strategic product decisions." },
+    "tags": ["Architecture", "Code Review", "Tech Lead"]
   },
   {
     "iconType": "alert",
-    "title": "Auditoría & Performance",
-    "desc": "Diagnóstico de sistemas existentes, detección de cuellos de botella, seguridad, optimización de queries y mejora de tiempos de respuesta.",
-    "tags": ["Performance", "Seguridad", "Optimización"]
-  },
-  {
-    "iconType": "activity",
-    "title": "MVP & Startups",
-    "desc": "Desarrollo ágil de productos mínimos viables. Stack correcto, tiempo al mercado rápido y base de código escalable desde el día uno.",
+    "title": { "es": "MVP & Startups",   "en": "MVP & Startups" },
+    "desc":  { "es": "Desarrollo ágil de productos mínimos viables. Stack correcto, tiempo al mercado rápido y base de código escalable desde el día uno.",
+               "en": "Agile development of minimum viable products. Right stack, fast time to market and scalable codebase from day one." },
     "tags": ["MVP", "Agile", "Full Stack"]
   }
 ]

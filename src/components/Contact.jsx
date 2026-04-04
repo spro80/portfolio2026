@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import useFadeIn from './useFadeIn';
 import { getContact } from '../api';
+import t from '../i18n';
 
 const ICONS = {
   mail: (
@@ -66,14 +67,14 @@ export default function Contact() {
 
   const handleSubmit = () => {
     if (!form.name || !form.email || !form.msg) {
-      alert('Por favor completa nombre, email y mensaje.');
+      alert(t.contact.validation);
       return;
     }
-    const subject = encodeURIComponent(`[Portfolio] ${form.service || 'Consulta'} — ${form.name}`);
+    const subject = encodeURIComponent(`[Portfolio] ${form.service || 'Inquiry'} — ${form.name}`);
     const body = encodeURIComponent(
-      `Nombre: ${form.name}\nEmail: ${form.email}\nServicio: ${form.service}\n\n${form.msg}`
+      `Name: ${form.name}\nEmail: ${form.email}\nService: ${form.service}\n\n${form.msg}`
     );
-    window.open(`mailto:spyrodiazsierra@gmail.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:spro80@gmail.com?subject=${subject}&body=${body}`);
     setSent(true);
     setForm({ name: '', email: '', service: '', msg: '' });
   };
@@ -89,9 +90,9 @@ export default function Contact() {
     >
       <div className="container">
         <div className="text-center mb-5 fade-in" ref={headRef}>
-          <p className="section-tag">contacto</p>
-          <h2 className="section-title">¿Tienes un proyecto?</h2>
-          <p className="section-sub mx-auto">Cuéntame sobre tu idea. Respondo en menos de 24 horas.</p>
+          <p className="section-tag">{t.contact.tag}</p>
+          <h2 className="section-title">{t.contact.title}</h2>
+          <p className="section-sub mx-auto">{t.contact.subtitle}</p>
         </div>
 
         <div className="row g-5 fade-in" ref={bodyRef}>
@@ -106,15 +107,15 @@ export default function Contact() {
                 <div style={{ textAlign: 'center', padding: '3rem 0' }}>
                   <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>✓</div>
                   <div style={{ fontWeight: 700, fontSize: '1.2rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
-                    ¡Mensaje enviado!
+                    {t.contact.successTitle}
                   </div>
-                  <div style={{ color: 'var(--muted)' }}>Te respondo en menos de 24 horas.</div>
+                  <div style={{ color: 'var(--muted)' }}>{t.contact.successSub}</div>
                   <button
                     className="btn-outline-custom"
                     style={{ marginTop: '1.5rem' }}
                     onClick={() => setSent(false)}
                   >
-                    Enviar otro mensaje
+                    {t.contact.sendAnother}
                   </button>
                 </div>
               ) : (
@@ -123,7 +124,7 @@ export default function Contact() {
                     <div className="col-sm-6">
                       <input
                         style={{ ...inputStyle, borderColor: focused === 'name' ? 'rgba(0,255,136,0.4)' : 'var(--card-border)' }}
-                        type="text" name="name" placeholder="Tu nombre"
+                        type="text" name="name" placeholder={t.contact.namePlaceholder}
                         value={form.name} onChange={handleChange}
                         onFocus={() => setFocused('name')} onBlur={() => setFocused('')}
                       />
@@ -131,7 +132,7 @@ export default function Contact() {
                     <div className="col-sm-6">
                       <input
                         style={{ ...inputStyle, borderColor: focused === 'email' ? 'rgba(0,255,136,0.4)' : 'var(--card-border)' }}
-                        type="email" name="email" placeholder="tu@email.com"
+                        type="email" name="email" placeholder="you@email.com"
                         value={form.email} onChange={handleChange}
                         onFocus={() => setFocused('email')} onBlur={() => setFocused('')}
                       />
@@ -141,20 +142,12 @@ export default function Contact() {
                     name="service" value={form.service} onChange={handleChange}
                     style={{ ...inputStyle, color: form.service ? 'var(--text)' : 'var(--muted)' }}
                   >
-                    <option value="" disabled>Tipo de proyecto</option>
-                    <option>Desarrollo Frontend</option>
-                    <option>Desarrollo Backend</option>
-                    <option>Full Stack</option>
-                    <option>Cloud / DevOps</option>
-                    <option>Consultoría Técnica</option>
-                    <option>Auditoría / Performance</option>
-                    <option>MVP / Startup</option>
-                    <option>Inteligencia Artificial</option>
-                    <option>Otros</option>
+                    <option value="" disabled>{t.contact.projectType}</option>
+                    {t.contact.options.map(o => <option key={o}>{o}</option>)}
                   </select>
                   <textarea
                     name="msg" value={form.msg} onChange={handleChange}
-                    placeholder="Cuéntame sobre tu proyecto. ¿Qué quieres construir?"
+                    placeholder={t.contact.msgPlaceholder}
                     style={{
                       ...inputStyle,
                       resize: 'vertical', minHeight: 130,
@@ -163,7 +156,7 @@ export default function Contact() {
                     onFocus={() => setFocused('msg')} onBlur={() => setFocused('')}
                   />
                   <button className="btn-primary-custom w-100" onClick={handleSubmit}>
-                    Enviar mensaje →
+                    {t.contact.send}
                   </button>
                 </>
               )}
@@ -173,8 +166,7 @@ export default function Contact() {
           {/* Info */}
           <div className="col-lg-5">
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-              Trabajo con clientes en Chile y Latinoamérica. Disponible para
-              proyectos freelance, contratos long-term y consultoría puntual.
+              {t.contact.infoText}
             </p>
             {contactInfo.map(info => (
               <div key={info.label} style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>

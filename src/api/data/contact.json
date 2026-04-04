@@ -1,7 +1,7 @@
 [
-  { "iconType": "mail",      "label": "Email",     "value": "spro80@gmail.com" },
-  { "iconType": "whatsapp",  "label": "WhatsApp",  "value": "https://wa.me/56989194282" },
-  { "iconType": "location",  "label": "Ubicación", "value": "Santiago, Chile · Remoto" },
-  { "iconType": "linkedin",  "label": "LinkedIn",  "value": "https://www.linkedin.com/in/david-spiro-diaz-sierra/" },
-  { "iconType": "github",    "label": "GitHub",    "value": "https://github.com/spro80" }
+  { "iconType": "mail",     "label": { "es": "Email",     "en": "Email"    }, "value": "spro80@gmail.com" },
+  { "iconType": "whatsapp", "label": { "es": "WhatsApp",  "en": "WhatsApp" }, "value": "https://wa.me/56989194282" },
+  { "iconType": "location", "label": { "es": "Ubicación", "en": "Location" }, "value": { "es": "Santiago, Chile · Remoto", "en": "Santiago, Chile · Remote" } },
+  { "iconType": "linkedin", "label": "LinkedIn",                              "value": "https://www.linkedin.com/in/david-spiro-diaz-sierra/" },
+  { "iconType": "github",   "label": "GitHub",                               "value": "https://github.com/spro80" }
 ]

@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+import t from '../i18n';
 
 const links = [
-  { label: 'Sobre mí',  href: '#about'    },
-  { label: 'Servicios', href: '#services'  },
-  { label: 'Proyectos', href: '#projects'  },
-  { label: 'Contacto',  href: '#contact'   },
+  { label: t.nav.about,    href: '#about'    },
+  { label: t.nav.services, href: '#services'  },
+  { label: t.nav.projects, href: '#projects'  },
+  { label: t.nav.contact,  href: '#contact'   },
 ];
 
 const styles = {
@@ -73,7 +74,6 @@ export default function Navbar() {
           spiro.dev
         </a>
 
-        {/* Desktop links */}
         {!mobile && (
           <ul style={styles.ul}>
             {links.map(l => (
@@ -100,7 +100,7 @@ export default function Navbar() {
             onMouseEnter={e => e.target.style.opacity = '0.85'}
             onMouseLeave={e => e.target.style.opacity = '1'}
           >
-            Contratar
+            {t.nav.cta}
           </a>
         )}
 
@@ -108,14 +108,13 @@ export default function Navbar() {
           <button
             style={{ ...styles.hamburger, display: 'block' }}
             onClick={() => setOpen(o => !o)}
-            aria-label="Menú"
+            aria-label="Menu"
           >
             {open ? '✕' : '☰'}
           </button>
         )}
       </nav>
 
-      {/* Mobile menu */}
       {mobile && open && (
         <div style={styles.mobileMenu}>
           {links.map(l => (
@@ -134,7 +133,7 @@ export default function Navbar() {
             style={{ textAlign: 'center' }}
             onClick={e => { e.preventDefault(); handleNav('#contact'); }}
           >
-            Contratar
+            {t.nav.cta}
           </a>
         </div>
       )}

@@ -1,27 +1,27 @@
 [
   {
-    "year":    "2021 — Presente",
+    "year":    { "es": "2021 — Presente", "en": "2021 — Present" },
     "role":    "Senior Software Engineer",
     "company": "Walmart · Santiago, Chile"
   },
   {
     "year":    "2019 — 2021",
-    "role":    "Full Stack Developer & Focal Point",
-    "company": "Banco Falabella · Santiago, Chile"
+    "role":    "Full Stack Developer & Cell Lead",
+    "company": "Digital Factory Falabella · Santiago, Chile"
   },
   {
     "year":    "2015 — 2019",
-    "role":    "Senior Backend Developer & QA Automation",
+    "role":    "Senior Software Engineer & QA Automation",
     "company": "Zweicom · Chile"
   },
   {
-    "year":    "2013 — 2015",
-    "role":    "Jefe Proyecto",
-    "company": "Amazon · Chile"
+    "year":    "2013 — 2014",
+    "role":    "Leading Engineer of Projects & Services",
+    "company": "Amazona · Chile"
   },
   {
-    "year":    "2013 — 2015",
-    "role":    "Coordinador Técnico",
-    "company": "GTD Codelco · Chile"
+    "year":    "2012 — 2013",
+    "role":    "Technical Coordinator Engineer",
+    "company": "GTD · Codelco Southern Mine"
   }
 ]

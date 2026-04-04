@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { getStats } from '../api';
-
+import t from '../i18n';
 
 export default function Hero() {
   const contentRef = useRef(null);
@@ -79,7 +79,7 @@ export default function Hero() {
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: '0.72rem', color: 'var(--accent)', letterSpacing: '0.08em',
             }}>
-              Open to AI / Backend projects
+              {t.hero.available}
             </span>
           </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
             fontSize: '0.75rem', padding: '0.35rem 1rem', borderRadius: 2,
             marginBottom: '2rem', letterSpacing: '0.1em',
           }}>
-            AI Engineer &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; Cloud
+            {t.hero.badge}
           </div>
 
           <h1 style={{
@@ -100,7 +100,7 @@ export default function Hero() {
             fontWeight: 800, lineHeight: 1.0,
             color: '#fff', marginBottom: '1.5rem', letterSpacing: '-2px',
           }}>
-            Hola, soy<br />
+            {t.hero.greeting}<br />
             <span style={{ color: 'var(--accent)' }}>Spiro.</span>
           </h1>
 
@@ -108,17 +108,15 @@ export default function Hero() {
             fontSize: '1.05rem', color: 'var(--muted)',
             maxWidth: 480, margin: '0 0 2.5rem', lineHeight: 1.7,
           }}>
-            Ingeniero de software especializado en arquitecturas escalables,
-            desarrollo Full Stack y soluciones Cloud. Convierto ideas complejas
-            en productos digitales de alto rendimiento.
+            {t.hero.description}
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <button className="btn-primary-custom" onClick={() => scrollTo('#projects')}>
-              Ver proyectos
+              {t.hero.btnProjects}
             </button>
             <button className="btn-outline-custom" onClick={() => scrollTo('#contact')}>
-              Hablemos
+              {t.hero.btnContact}
             </button>
           </div>
 
@@ -146,14 +144,12 @@ export default function Hero() {
 
         {/* Right: photo */}
         <div style={{ flex: '0 0 auto', display: 'flex', justifyContent: 'center' }}>
-          {/* Decorative glow behind photo */}
           <div style={{ position: 'relative' }}>
             <div style={{
               position: 'absolute', inset: -24,
               background: 'radial-gradient(circle, rgba(0,255,136,0.12) 0%, transparent 70%)',
               borderRadius: '50%', pointerEvents: 'none',
             }} />
-            {/* Gradient border wrapper */}
             <div style={{
               padding: '2px',
               background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
@@ -165,7 +161,6 @@ export default function Hero() {
                 style={{ width: 300, height: 370, borderRadius: 18, display: 'block' }}
               />
             </div>
-            {/* Floating badge */}
             <div style={{
               position: 'absolute', bottom: -16, right: -16,
               background: 'var(--card-bg)', border: '1px solid var(--card-border)',

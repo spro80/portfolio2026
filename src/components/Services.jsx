@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import useFadeIn from './useFadeIn';
 import { getServices } from '../api';
+import t from '../i18n';
 
 const ICONS = {
   code: (
@@ -68,7 +69,7 @@ function ServiceCard({ service }) {
         {service.desc}
       </div>
       <div style={{ marginTop: '1.25rem' }}>
-        {service.tags.map(t => <span key={t} className="tech-pill">{t}</span>)}
+        {service.tags.map(tag => <span key={tag} className="tech-pill">{tag}</span>)}
       </div>
     </div>
   );
@@ -103,12 +104,9 @@ export default function Services() {
     >
       <div className="container">
         <div className="text-center mb-5 fade-in" ref={headRef}>
-          <p className="section-tag">servicios</p>
-          <h2 className="section-title">¿En qué puedo ayudarte?</h2>
-          <p className="section-sub mx-auto">
-            Ofrezco servicios de desarrollo de software end-to-end adaptados
-            a las necesidades de tu proyecto o empresa.
-          </p>
+          <p className="section-tag">{t.services.tag}</p>
+          <h2 className="section-title">{t.services.title}</h2>
+          <p className="section-sub mx-auto">{t.services.subtitle}</p>
         </div>
 
         <div className="row g-4">

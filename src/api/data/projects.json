@@ -1,26 +1,29 @@
 [
   {
-    "label": "AI / BACKEND",
-    "labelColor": "var(--accent2)",
-    "illustrationType": "chat",
-    "title": "Terapeuta Virtual con IA",
-    "desc": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
-    "stack": ["Python", "FastAPI", "React js", "OpenAI", "MongoDB", "Docker", "AWS"]
+    "label":             { "es": "IA / BACKEND",   "en": "AI / BACKEND" },
+    "labelColor":        "var(--accent2)",
+    "illustrationType":  "chat",
+    "title": { "es": "Terapeuta Virtual con IA",        "en": "AI-Powered Virtual Therapist" },
+    "desc":  { "es": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
+               "en": "Conversational therapeutic assistant powered by OpenAI GPT-4. Persistent session memory in MongoDB to maintain context across conversations and personalize each user's experience." },
+    "stack": ["Python", "FastAPI", "React", "OpenAI", "MongoDB", "Docker", "AWS"]
   },
   {
-    "label": "RAG / AI",
-    "labelColor": "var(--accent)",
-    "illustrationType": "rag",
-    "title": "Análisis de Documentos Banco Central",
-    "desc": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
-    "stack": ["Python", "FastAPI", "API", "Pinecone", "Vector Database", "OpenAI", "Docker"]
+    "label":             { "es": "RAG / IA",   "en": "RAG / AI" },
+    "labelColor":        "var(--accent)",
+    "illustrationType":  "rag",
+    "title": { "es": "Análisis de Documentos Banco Central",   "en": "Central Bank Document Analysis" },
+    "desc":  { "es": "Sistema RAG para búsqueda semántica sobre informes del Banco Central. Embeddings vectoriales en Pinecone, recuperación de contexto relevante e inferencia con GPT-4 vía FastAPI.",
+               "en": "RAG system for semantic search over Central Bank reports. Vector embeddings in Pinecone, relevant context retrieval and GPT-4 inference via FastAPI." },
+    "stack": ["Python", "FastAPI", "Pinecone", "Vector DB", "OpenAI", "Docker"]
   },
   {
-    "label": "FINTECH / AI",
-    "labelColor": "#a78bfa",
-    "illustrationType": "chart",
-    "title": "Análisis Bursátil y Cripto con IA",
-    "desc": "Plataforma de análisis técnico y fundamental para acciones y criptomonedas. Calcula indicadores RSI, MACD, Bollinger Bands y genera señales de trading con modelos de IA entrenados sobre datos históricos.",
+    "label":             { "es": "FINTECH / IA",   "en": "FINTECH / AI" },
+    "labelColor":        "#a78bfa",
+    "illustrationType":  "chart",
+    "title": { "es": "Análisis Bursátil y Cripto con IA",   "en": "Stock & Crypto Analysis with AI" },
+    "desc":  { "es": "Plataforma de análisis técnico y fundamental para acciones y criptomonedas. Calcula indicadores RSI, MACD, Bollinger Bands y genera señales de trading con modelos de IA entrenados sobre datos históricos.",
+               "en": "Technical and fundamental analysis platform for stocks and cryptocurrencies. Computes RSI, MACD, Bollinger Bands and generates trading signals with AI models trained on historical data." },
     "stack": ["Python", "FastAPI", "OpenAI", "Pandas", "AWS"]
   }
 ]

@@ -1,3 +1,5 @@
+import t from '../i18n';
+
 const socials = [
   {
     label: 'GitHub',
@@ -38,7 +40,6 @@ export default function Footer() {
       color: 'var(--muted)',
       fontFamily: "'JetBrains Mono', monospace",
     }}>
-      {/* Nombre + tagline */}
       <div style={{ marginBottom: '0.5rem' }}>
         <span style={{
           fontSize: '1.25rem',
@@ -51,10 +52,9 @@ export default function Footer() {
         </span>
       </div>
       <p style={{ fontSize: '0.75rem', margin: '0 0 1.5rem', color: 'var(--muted)' }}>
-        AI Engineer & Full Stack · Santiago, Chile
+        {t.footer.tagline}
       </p>
 
-      {/* Iconos sociales */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
         {socials.map(({ label, href, icon }) => (
           <a
@@ -82,9 +82,8 @@ export default function Footer() {
         ))}
       </div>
 
-      {/* Separador */}
       <div style={{ borderTop: '1px solid var(--card-border)', paddingTop: '1.25rem', fontSize: '0.7rem' }}>
-        © {year} David Spiro &nbsp;·&nbsp; Construido con React + Bootstrap
+        © {year} David Spiro &nbsp;·&nbsp; {t.footer.built}
       </div>
     </footer>
   );

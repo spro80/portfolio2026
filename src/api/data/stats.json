@@ -1,5 +1,5 @@
 [
-  { "num": "15+",  "label": "Años de experiencia" },
-  { "num": "3+", "label": "Proyectos"    },
-  { "num": "3+", "label": "Clientes"     }
+  { "num": "15+", "label": { "es": "Años de experiencia", "en": "Years of experience" } },
+  { "num": "30+", "label": { "es": "Proyectos",           "en": "Projects"            } },
+  { "num": "15+", "label": { "es": "Clientes",            "en": "Clients"             } }
 ]
