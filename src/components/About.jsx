@@ -21,7 +21,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" style={{ padding: '6rem 0' }}>
+    <section id="about" style={{ padding: '6rem 0', borderTop: '1px solid var(--card-border)' }}>
       <div className="container">
         <div className="row align-items-center g-5">
 

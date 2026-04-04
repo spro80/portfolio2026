@@ -79,7 +79,7 @@ export default function Hero() {
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: '0.72rem', color: 'var(--accent)', letterSpacing: '0.08em',
             }}>
-              Disponible para proyectos
+              Open to AI / Backend projects
             </span>
           </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
             fontSize: '0.75rem', padding: '0.35rem 1rem', borderRadius: 2,
             marginBottom: '2rem', letterSpacing: '0.1em',
           }}>
-            Software Engineer &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; Cloud
+            AI Engineer &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; Cloud
           </div>
 
           <h1 style={{
@@ -181,21 +181,6 @@ export default function Hero() {
 
       </div>
 
-      {/* Scroll indicator */}
-      <div style={{
-        position: 'absolute', bottom: '2rem', left: '50%',
-        animation: 'bounce 2s infinite',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem',
-        color: 'var(--muted)',
-        fontFamily: "'JetBrains Mono', monospace",
-        fontSize: '0.65rem', letterSpacing: '0.1em',
-      }}>
-        <div style={{
-          width: 1, height: 32,
-          background: 'linear-gradient(to bottom, var(--accent), transparent)',
-        }} />
-        <span>scroll</span>
-      </div>
     </section>
   );
 }
