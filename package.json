@@ -11,8 +11,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:en": "REACT_APP_LANG=en react-scripts build",
-    "build:es": "REACT_APP_LANG=es react-scripts build"
+    "build:en": "REACT_APP_LANG=en CI=false react-scripts build",
+    "build:es": "REACT_APP_LANG=es CI=false react-scripts build"
   },
   "browserslist": {
     "production": [">0.2%", "not dead"],
