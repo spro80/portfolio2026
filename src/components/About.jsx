@@ -28,16 +28,16 @@ export default function About() {
           {/* Left — bio & skills */}
           <div className="col-lg-5 fade-in" ref={leftRef}>
             <p className="section-tag">sobre mí</p>
-            <h2 className="section-title">Construyo software que escala</h2>
+            <h2 className="section-title">Senior Software Engineer & AI Engineer</h2>
             <p className="section-sub mb-4">
-              Soy Spiro, ingeniero de software con experiencia en el ciclo completo
-              de desarrollo: desde arquitectura y backend hasta frontend e
-              infraestructura cloud.
+              Soy Spiro, ingeniero de software con más de 15 años construyendo
+              aplicaciones backend, frontend, inteligencia artificial.
             </p>
             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
-              Me apasiona resolver problemas técnicos complejos con soluciones
-              elegantes. Trabajo con startups y empresas para construir sistemas
-              confiables y mantenibles que crecen junto al negocio.
+              Especializado en tecnologías de Inteligencia Artificial: Diseño y despliegue de agentes inteligentes,
+              soluciones de IA Generativa y aplicaciones LLM usando LangChain, LangGraph
+              y arquitecturas RAG. Amplia experiencia en arquitecturas de microservicios,
+              event-driven, DevOps cloud-native en AWS.
             </p>
             <div>
               {skills.map(s => (
