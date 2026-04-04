@@ -6,7 +6,7 @@
     "title": { "es": "Terapeuta Virtual con IA",        "en": "AI-Powered Virtual Therapist" },
     "desc":  { "es": "Asistente terapéutico conversacional potenciado por OpenAI GPT-4. Memoria persistente de sesiones en MongoDB para mantener contexto entre conversaciones y personalizar la experiencia de cada usuario.",
                "en": "Conversational therapeutic assistant powered by OpenAI GPT-4. Persistent session memory in MongoDB to maintain context across conversations and personalize each user's experience." },
-    "stack": ["Python", "FastAPI", "React", "OpenAI", "MongoDB", "Docker", "AWS"]
+    "stack": ["Python", "FastAPI", "React", "OpenAI", "MongoDB", "Docker", "AWS", "HeyGen"]
   },
   {
     "label":             { "es": "RAG / IA",   "en": "RAG / AI" },
